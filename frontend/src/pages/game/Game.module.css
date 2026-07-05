@@ -1,0 +1,140 @@
+.content {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==== TITLE ==== */
+.title {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ===== TABLE ===== */
+.table {
+    width: 40vw;
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background: #23252f;
+    border: 2px solid rgba(192, 132, 252, 0.2);
+    border-radius: 999px;
+
+    box-shadow:
+        inset 0 2px 8px rgba(255, 255, 255, 0.03),
+        0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ===== PLAYER SEAT ===== */
+.playerSeat {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== PLAYER HAND ===== */
+.playerHand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== PLAYER INFO ===== */
+.playerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+/* ==== CARD ==== */
+.card {
+    width: 60px;
+    height: 90px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.playerHand .card {
+    margin-right: -10px;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+}
+
+.cardSelected {
+    transform: translateY(-12px);
+}
+
+.cardRank {
+    font-weight: bold;
+}
+
+.card.SPADES, .card.CLUBS {
+    color: black;
+}
+.suitIcon.SPADES, .suitIcon.CLUBS {
+    fill: black;
+}
+.card.HEARTS, .card.DIAMONDS {
+    color: red;
+}
+.suitIcon.HEARTS, .suitIcon.DIAMONDS {
+    fill: red;
+}
+
+/* ==== BUTTONS ===== */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.sortContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 40px;
+    font-size: 20px;
+    background-color: rgba(192, 132, 252, 0.15);
+    color:  #c084fc;
+    margin: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    &:hover {
+        border-color: rgba(192, 132, 252, 0.5);
+    }
+    &:focus-visible {
+        outline: 2px solid #c084fc;
+        outline-offset: 2px;
+    }
+}
+
+/* ==== GENERAL STYLES ===== */
+.hidden {
+    display: none;
+}

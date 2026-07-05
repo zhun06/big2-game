@@ -1,0 +1,9 @@
+/* Global CSS constants for the entire app */
+
+:root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --color-bg: #16171d;
+    --mono: ui-monospace, Consolas, monospace;
+    --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
